@@ -96,7 +96,7 @@ export default function CraftArmorPage() {
       }
     }
     const byCategory = new Map<string, string[]>(); // category → [materialId]
-    for (const [materialId, slotMap] of usage) {
+    for (const materialId of usage.keys()) {
       const mat = matMap.get(materialId);
       const cat = mat?.category ?? 'other';
       if (!byCategory.has(cat)) byCategory.set(cat, []);
