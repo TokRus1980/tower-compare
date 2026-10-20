@@ -474,3 +474,138 @@ footer {
 .craft-meta {
   margin: 4px 0 8px;
 }
+
+/* ---------- матрица крафта ---------- */
+.craft-matrix-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--shell);
+  margin-top: 12px;
+}
+
+.craft-matrix {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  /* убрали min-width — таблица влезает в контейнер */
+  margin: 0;
+  background: var(--shell);
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+.craft-matrix th,
+.craft-matrix td {
+  padding: 5px 6px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  line-height: 1.2;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+/* Первый столбец — ресурс */
+.craft-matrix th.col-resource,
+.craft-matrix td.col-resource {
+  text-align: left;
+  position: sticky;
+  left: 0;
+  background: var(--shell);
+  z-index: 2;
+  width: 130px;
+  min-width: 130px;
+  max-width: 130px;
+  border-right: 1px solid var(--border);
+  font-size: 12px;
+}
+
+/* Слоты */
+.craft-matrix th.col-slot,
+.craft-matrix td.col-slot {
+  width: auto;
+  min-width: 60px;
+}
+
+/* Итоговые колонки */
+.craft-matrix th.col-total,
+.craft-matrix td.col-total,
+.craft-matrix th.col-price,
+.craft-matrix td.col-price {
+  background: var(--shell-2);
+  font-weight: 500;
+  border-left: 1px solid var(--border);
+  width: 52px;
+  min-width: 52px;
+  max-width: 52px;
+  font-size: 12px;
+}
+
+.craft-matrix th.col-price,
+.craft-matrix td.col-price {
+  color: var(--yellow);
+}
+
+.craft-matrix thead th {
+  position: sticky;
+  top: 0;
+  background: var(--shell-2);
+  z-index: 1;
+  vertical-align: top;
+}
+
+.craft-matrix thead th.col-resource {
+  z-index: 3;
+}
+
+.slot-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+
+.slot-name {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 12px;
+  word-break: break-word;
+}
+
+.slot-item {
+  font-size: 10px;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  color: var(--muted);
+  line-height: 1.15;
+  max-width: 100%;
+}
+
+.craft-matrix .group-row td {
+  background: var(--shell-2);
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding: 5px 6px;
+  position: sticky;
+  left: 0;
+}
+
+.craft-matrix .zero-cell {
+  color: var(--muted);
+  opacity: 0.5;
+}
+
+.craft-matrix tfoot td {
+  background: var(--shell-2);
+  font-weight: 600;
+  border-top: 1px solid var(--border);
+}
