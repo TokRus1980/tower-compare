@@ -398,6 +398,8 @@ footer {
   position: sticky;
   top: 0;
   z-index: 10;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .topnav a {
@@ -406,6 +408,7 @@ footer {
   padding: 6px 14px;
   border-radius: 6px;
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .topnav a:hover {
@@ -475,6 +478,31 @@ footer {
   margin: 4px 0 8px;
 }
 
+/* ---------- иконки ---------- */
+.item-icon {
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
+  border-radius: 4px;
+  background: var(--shell-2);
+  flex-shrink: 0;
+}
+
+.icon-fallback {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 4px;
+  background: var(--shell-2);
+  border: 1px dashed var(--border);
+  flex-shrink: 0;
+}
+
+.cell-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 /* ---------- матрица крафта ---------- */
 .craft-matrix-wrap {
   overflow-x: auto;
@@ -488,7 +516,6 @@ footer {
   border-collapse: separate;
   border-spacing: 0;
   width: 100%;
-  /* убрали min-width — таблица влезает в контейнер */
   margin: 0;
   background: var(--shell);
   border-radius: 8px;
@@ -608,4 +635,189 @@ footer {
   background: var(--shell-2);
   font-weight: 600;
   border-top: 1px solid var(--border);
+}
+
+/* ---------- мобильная адаптация ---------- */
+@media (max-width: 768px) {
+  .compare-page {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-size: 15px;
+    margin: 16px 0 6px;
+  }
+
+  .topnav {
+    padding: 8px 12px;
+    gap: 4px;
+  }
+
+  .topnav a {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .selectors {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .combobox {
+    min-width: 100%;
+  }
+
+  .swap {
+    align-self: flex-start;
+    margin: 0;
+  }
+
+  .reset-b {
+    align-self: flex-start;
+  }
+
+  /* Матрица крафта */
+  .craft-matrix-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .craft-matrix th,
+  .craft-matrix td {
+    padding: 4px 3px;
+    font-size: 11px;
+  }
+
+  .craft-matrix th.col-resource,
+  .craft-matrix td.col-resource {
+    width: 90px;
+    min-width: 90px;
+    max-width: 90px;
+    font-size: 11px;
+  }
+
+  .craft-matrix th.col-slot,
+  .craft-matrix td.col-slot {
+    min-width: 45px;
+  }
+
+  .craft-matrix th.col-total,
+  .craft-matrix td.col-total,
+  .craft-matrix th.col-price,
+  .craft-matrix td.col-price {
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    font-size: 10px;
+  }
+
+  .slot-name {
+    font-size: 10px;
+  }
+
+  .slot-item {
+    font-size: 9px;
+    line-height: 1.1;
+  }
+
+  /* Статы */
+  .stats .stat-row {
+    grid-template-columns: 1fr 50px 50px 50px;
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  /* Стоимость */
+  .cost-row {
+    grid-template-columns: 1fr 80px 80px;
+    font-size: 13px;
+  }
+
+  /* Иконки */
+  .item-icon {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .cell-with-icon {
+    gap: 4px;
+  }
+
+  .slot-head .item-icon {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  /* Таблицы */
+  th,
+  td {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+}
+
+/* ---------- фильтр по классам ---------- */
+.class-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.chip {
+  background: var(--shell);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.chip:hover {
+  color: var(--text);
+  background: var(--shell-2);
+}
+
+.chip.active {
+  color: var(--green);
+  border-color: var(--green);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.detailed-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+  padding-bottom: 8px;
+}
+
+.detailed-toggle input {
+  cursor: pointer;
+  accent-color: var(--green);
+}
+
+/* На десктопе галочка не нужна — там всегда детально */
+@media (min-width: 769px) {
+  .detailed-toggle {
+    display: none;
+  }
+}
+
+/* На десктопе всегда показываем слоты (даже если detailed=false) */
+@media (min-width: 769px) {
+  .craft-matrix-wrap:not(.detailed) th.col-slot,
+  .craft-matrix-wrap:not(.detailed) td.col-slot {
+    display: table-cell;
+  }
 }

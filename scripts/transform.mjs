@@ -147,6 +147,17 @@ function ingestItem(it) {
   return { kind: 'item', id };
 }
 
+// Хелпер: превратить ингредиент из raw в { materialId, qty }, где materialId
+// — реальный ID (mat_/item_/tool_), а не всегда mat_.
+function buildIngredient(ing) {
+  const m = ing.Item;
+  const ref = m ? ingestItem(m) : null;
+  return {
+    materialId: ref?.id ?? `mat_${ing.MaterialItemID}`,
+    qty: ing.Count,
+  };
+}
+
 // ---------- проход по рецептам ----------
 for (const r of raw.Recipes) {
   const outputs = r.Outputs ?? [];
@@ -163,19 +174,10 @@ for (const r of raw.Recipes) {
       const item = items.get(ref.id);
       if (setId) item.setId = setId;
       itemIds.push(ref.id);
-
-      item.ingredients = (out.Ingredients ?? []).map((ing) => {
-        const m = ing.Item;
-        if (m) ingestItem(m);
-        return { materialId: `mat_${ing.MaterialItemID}`, qty: ing.Count };
-      });
+      item.ingredients = (out.Ingredients ?? []).map(buildIngredient);
     } else if (ref.kind === 'tool') {
       const tool = tools.get(ref.id);
-      tool.ingredients = (out.Ingredients ?? []).map((ing) => {
-        const m = ing.Item;
-        if (m) ingestItem(m);
-        return { materialId: `mat_${ing.MaterialItemID}`, qty: ing.Count };
-      });
+      tool.ingredients = (out.Ingredients ?? []).map(buildIngredient);
       itemIds.push(ref.id);
     }
   }
@@ -216,11 +218,7 @@ for (const r of raw.Recipes) {
   const out = r.Outputs?.[0];
   if (!out?.Item) continue;
   const materialItemId = out.Item.ItemID;
-  const ingredients = (out.Ingredients ?? []).map((ing) => {
-    const m = ing.Item;
-    if (m) ingestItem(m);
-    return { materialId: `mat_${ing.MaterialItemID}`, qty: ing.Count };
-  });
+  const ingredients = (out.Ingredients ?? []).map(buildIngredient);
   materialRecipes.set(materialItemId, {
     recipeId: `recipe_${r.ID}`,
     studyCostTWR: r.Price ?? 0,
@@ -230,21 +228,20 @@ for (const r of raw.Recipes) {
   });
 }
 
+// usageOf: materialItemId → Set<itemId | toolId>
+// Учитываем ТОЛЬКО ингредиенты-материалы (mat_XXX), потому что usedIn
+// заполняется для materials.json.
 const usageOf = new Map();
-for (const item of items.values()) {
-  for (const ing of item.ingredients) {
-    const key = Number(ing.materialId.replace('mat_', ''));
+function trackUsage(ingredients, ownerId) {
+  for (const ing of ingredients) {
+    if (!ing.materialId.startsWith('mat_')) continue;
+    const key = Number(ing.materialId.slice(4));
     if (!usageOf.has(key)) usageOf.set(key, new Set());
-    usageOf.get(key).add(item.id);
+    usageOf.get(key).add(ownerId);
   }
 }
-for (const tool of tools.values()) {
-  for (const ing of tool.ingredients) {
-    const key = Number(ing.materialId.replace('mat_', ''));
-    if (!usageOf.has(key)) usageOf.set(key, new Set());
-    usageOf.get(key).add(tool.id);
-  }
-}
+for (const item of items.values()) trackUsage(item.ingredients, item.id);
+for (const tool of tools.values()) trackUsage(tool.ingredients, tool.id);
 
 for (const [itemId, mat] of materials) {
   const recipe = materialRecipes.get(itemId);

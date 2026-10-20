@@ -2,6 +2,7 @@
 import { Fragment, useState } from 'react';
 import { SlotView } from '../lib/compare';
 import { SLOT_LABEL, STAT_LABEL, Stats } from '../types';
+import ItemIcon from './ItemIcon'; // ← добавили
 
 function StatCells({ label, a, b, d }: { label: string; a: number; b: number; d: number }) {
   if (a === 0 && b === 0 && d === 0) return null;
@@ -46,8 +47,26 @@ export default function SlotTable({ rows }: { rows: SlotView[] }) {
                   {hasDiff && <span className="chevron">{isOpen ? '▾' : '▸'}</span>}
                   {SLOT_LABEL[r.slot]}
                 </td>
-                <td>{r.itemA?.name ?? '—'}</td>
-                <td>{r.itemB?.name ?? '—'}</td>
+                <td>
+                  {r.itemA ? (
+                    <div className="cell-with-icon">
+                      <ItemIcon name={r.itemA.name} size={16} />
+                      <span>{r.itemA.name}</span>
+                    </div>
+                  ) : (
+                    '—'
+                  )}
+                </td>
+                <td>
+                  {r.itemB ? (
+                    <div className="cell-with-icon">
+                      <ItemIcon name={r.itemB.name} size={16} />
+                      <span>{r.itemB.name}</span>
+                    </div>
+                  ) : (
+                    '—'
+                  )}
+                </td>
                 <td className="diff-col">
                   {same ? '=' : r.itemA || r.itemB ? '≠' : '—'}
                 </td>

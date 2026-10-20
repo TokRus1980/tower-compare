@@ -11,6 +11,7 @@ import {
   SLOT_LABEL,
 } from '../types';
 import Combobox, { ComboOption } from '../components/Combobox';
+import ItemIcon from '../components/ItemIcon';
 
 const items = itemsRaw as Item[];
 const tools = toolsRaw as Tool[];
@@ -32,12 +33,15 @@ const MATERIAL_CATEGORY_LABEL: Record<string, string> = {
 };
 
 function materialOptions(): ComboOption[] {
-  return materials.map((m) => ({
-    value: `mat:${m.id}`,
-    label: m.name,
-    hint: MATERIAL_CATEGORY_LABEL[m.category] ?? m.category,
-    group: MATERIAL_CATEGORY_LABEL[m.category] ?? 'Прочее',
-  }));
+  return [...materials]
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map((m) => ({
+      value: `mat:${m.id}`,
+      label: m.name,
+      hint: MATERIAL_CATEGORY_LABEL[m.category] ?? m.category,
+      group: MATERIAL_CATEGORY_LABEL[m.category] ?? 'Прочее',
+      iconName: m.name,
+    }));
 }
 
 type CraftNode = {
@@ -48,8 +52,12 @@ type CraftNode = {
 
 function expandCraft(materialId: string, qty: number, depth = 0): CraftNode[] {
   const mat = matMap.get(materialId);
-  if (!mat || depth > 4) return [{ materialId, qty, craftRecipe: mat?.craftRecipe ?? null }];
-  if (!mat.craftRecipe) return [{ materialId, qty, craftRecipe: null }];
+  if (!mat || depth > 4) {
+    return [{ materialId, qty, craftRecipe: mat?.craftRecipe ?? null }];
+  }
+  if (!mat.craftRecipe) {
+    return [{ materialId, qty, craftRecipe: null }];
+  }
   return [
     { materialId, qty, craftRecipe: mat.craftRecipe },
     ...mat.craftRecipe.ingredients.flatMap((ing) =>
@@ -99,7 +107,12 @@ export default function MaterialsPage() {
       {selected && (
         <>
           <section>
-            <h2>{selected.name}</h2>
+            <h2>
+              <span className="cell-with-icon">
+                <ItemIcon name={selected.name} size={28} />
+                {selected.name}
+              </span>
+            </h2>
             <div className="material-meta">
               <span className="badge">
                 {MATERIAL_CATEGORY_LABEL[selected.category] ?? selected.category}
@@ -145,7 +158,12 @@ export default function MaterialsPage() {
                       const m = matMap.get(ing.materialId);
                       return (
                         <tr key={ing.materialId}>
-                          <td>{m?.name ?? ing.materialId}</td>
+                          <td>
+                            <span className="cell-with-icon">
+                              <ItemIcon name={m?.name ?? ing.materialId} size={16} />
+                              {m?.name ?? ing.materialId}
+                            </span>
+                          </td>
                           <td>{ing.qty}</td>
                           <td>{m?.marketPriceTWR ?? '—'}</td>
                           <td>
@@ -183,22 +201,19 @@ export default function MaterialsPage() {
                   {usedInItems.map((u) => {
                     const isTool = 'toolType' in u;
                     const qty =
-                      u.ingredients.find((i) => i.materialId === selected.id)?.qty ?? 0;
+                      u.ingredients.find((i) => i.materialId === selected.id)
+                        ?.qty ?? 0;
 
-                    // класс(ы): для экипировки — из item.classes; для инструментов — нет
                     const classLabels: string[] = !isTool
                       ? (u as Item).classes.map((c) => CLASS_LABEL[c])
                       : [];
-                    const classText =
-                      isTool
-                        ? '—'
-                        : classLabels.length === 0
-                        ? 'Все классы'
-                        : classLabels.join(' / ');
+                    const classText = isTool
+                      ? '—'
+                      : classLabels.length === 0
+                      ? 'Все классы'
+                      : classLabels.join(' / ');
                     const classCls =
-                      isTool || classLabels.length === 0
-                        ? 'muted'
-                        : '';
+                      isTool || classLabels.length === 0 ? 'muted' : '';
 
                     return (
                       <tr key={u.id}>
@@ -206,10 +221,17 @@ export default function MaterialsPage() {
                           {isTool ? (
                             <span className="badge badge-blue">Инструмент</span>
                           ) : (
-                            <span className="badge">{SLOT_LABEL[(u as Item).slot]}</span>
+                            <span className="badge">
+                              {SLOT_LABEL[(u as Item).slot]}
+                            </span>
                           )}
                         </td>
-                        <td>{u.name}</td>
+                        <td>
+                          <span className="cell-with-icon">
+                            <ItemIcon name={u.name} size={16} />
+                            {u.name}
+                          </span>
+                        </td>
                         <td className={classCls}>{classText}</td>
                         <td>{qty}</td>
                         <td>{u.level}</td>
@@ -234,12 +256,18 @@ export default function MaterialsPage() {
                       className="craft-node"
                       style={{ paddingLeft: depth * 20 }}
                     >
-                      {m?.name ?? node.materialId} × {node.qty}
-                      {node.craftRecipe && (
-                        <span className="badge badge-green" style={{ marginLeft: 8 }}>
-                          ⚒
-                        </span>
-                      )}
+                      <span className="cell-with-icon">
+                        <ItemIcon name={m?.name ?? node.materialId} size={14} />
+                        {m?.name ?? node.materialId} × {node.qty}
+                        {node.craftRecipe && (
+                          <span
+                            className="badge badge-green"
+                            style={{ marginLeft: 6 }}
+                          >
+                            ⚒
+                          </span>
+                        )}
+                      </span>
                     </div>
                   );
                 })}
