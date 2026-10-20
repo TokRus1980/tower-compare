@@ -1,0 +1,476 @@
+/* src/styles/theme.css */
+:root {
+  --bg: #14171c;
+  --shell: #1e232b;
+  --shell-2: #262c36;
+  --text: #e5e9ef;
+  --muted: #8a94a6;
+  --green: rgb(16, 185, 129);
+  --red: rgb(239, 68, 68);
+  --yellow: rgb(245, 197, 66);
+  --border: #2f3642;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+    sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.compare-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0 0 16px;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 24px 0 8px;
+  color: var(--text);
+}
+
+section {
+  margin-bottom: 8px;
+}
+
+/* ---------- селекторы ---------- */
+.selectors {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 260px;
+}
+
+.selector-label {
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+select {
+  background: var(--shell);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 14px;
+}
+
+select:focus {
+  outline: 2px solid var(--green);
+  outline-offset: 1px;
+}
+
+button {
+  background: var(--shell-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: var(--shell);
+}
+
+.swap {
+  font-size: 18px;
+  padding: 6px 12px;
+  margin-bottom: 0;
+}
+
+/* ---------- предупреждения ---------- */
+.warn {
+  background: rgba(245, 197, 66, 0.12);
+  color: var(--yellow);
+  border: 1px solid rgba(245, 197, 66, 0.4);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 8px 0;
+}
+
+/* ---------- таблицы ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0 16px;
+  background: var(--shell);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.diff-col {
+  text-align: center;
+  color: var(--muted);
+  width: 60px;
+}
+
+/* ---------- статы ---------- */
+.stats {
+  background: var(--shell);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: 1fr 80px 80px 80px;
+  padding: 6px 12px;
+  border-bottom: 1px dashed var(--border);
+  align-items: center;
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+.stat-head {
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border);
+}
+
+.stat-label {
+  color: var(--text);
+}
+
+.stat-val {
+  color: var(--text);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.pos {
+  color: var(--green);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.neg {
+  color: var(--red);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.zero {
+  color: var(--muted);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- стоимость ---------- */
+.costs {
+  background: var(--shell);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cost-row {
+  display: grid;
+  grid-template-columns: 1fr 120px 120px;
+  padding: 8px 12px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.cost-row:last-child {
+  border-bottom: none;
+}
+
+.cost-row > span:not(:first-child) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- прочее ---------- */
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 12px;
+}
+
+footer {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- combobox ---------- */
+.combobox {
+  position: relative;
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.combo-input {
+  background: var(--shell);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.combo-input:focus {
+  outline: 2px solid var(--green);
+  outline-offset: 1px;
+}
+
+.combo-hint {
+  color: var(--muted);
+  font-size: 12px;
+  padding-left: 2px;
+}
+
+.combo-popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background: var(--shell);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-top: 4px;
+  max-height: 360px;
+  overflow-y: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.combo-group-label {
+  padding: 6px 12px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  background: var(--shell-2);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.combo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 12px;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.combo-item:hover,
+.combo-item.active {
+  background: var(--shell-2);
+}
+
+.combo-item.selected {
+  color: var(--green);
+}
+
+.combo-item.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.combo-item-hint {
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.combo-empty {
+  padding: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.combo-count {
+  padding: 6px 12px;
+  font-size: 11px;
+  color: var(--muted);
+  text-align: right;
+  border-top: 1px solid var(--border);
+  position: sticky;
+  bottom: 0;
+  background: var(--shell);
+}
+
+/* ---------- слоты: раскрытие ---------- */
+.slot-row.open {
+  background: var(--shell-2);
+}
+
+.chevron {
+  display: inline-block;
+  width: 14px;
+  color: var(--muted);
+  margin-right: 4px;
+}
+
+.slot-detail td {
+  padding: 0 !important;
+}
+
+.slot-detail .stats {
+  margin: 8px 12px;
+  border-radius: 6px;
+}
+
+/* ---------- кнопки ---------- */
+.reset-b {
+  padding: 8px 12px;
+  color: var(--muted);
+}
+
+.reset-b:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* ---------- навигация ---------- */
+.topnav {
+  display: flex;
+  gap: 8px;
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--border);
+  background: var(--shell);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topnav a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  background: var(--shell-2);
+  color: var(--text);
+}
+
+.topnav a.active {
+  background: var(--shell-2);
+  color: var(--green);
+}
+
+/* ---------- бейджи ---------- */
+.material-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 8px 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: var(--shell-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.badge-green {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.4);
+  color: var(--green);
+}
+
+.badge-blue {
+  background: rgba(59, 130, 246, 0.12);
+  border-color: rgba(59, 130, 246, 0.4);
+  color: rgb(96, 165, 250);
+}
+
+.badge-yellow {
+  background: rgba(245, 197, 66, 0.12);
+  border-color: rgba(245, 197, 66, 0.4);
+  color: var(--yellow);
+}
+
+/* ---------- дерево крафта ---------- */
+.craft-tree {
+  background: var(--shell);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 0;
+}
+
+.craft-node {
+  padding: 6px 12px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.craft-node:last-child {
+  border-bottom: none;
+}
+
+.craft-meta {
+  margin: 4px 0 8px;
+}

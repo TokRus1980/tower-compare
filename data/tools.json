@@ -1,0 +1,659 @@
+[
+  {
+    "id": "tool_123",
+    "itemId": 123,
+    "name": "Железный топор",
+    "toolType": "axe",
+    "rarity": "common",
+    "level": 1,
+    "stats": {
+      "strength": 1,
+      "agility": 28800,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 100
+    },
+    "marketPriceTWR": 3000,
+    "ingredients": [
+      {
+        "materialId": "mat_56",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_58",
+        "qty": 1
+      },
+      {
+        "materialId": "mat_4",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_53",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "tool_119",
+    "itemId": 119,
+    "name": "Железная кирка",
+    "toolType": "pick",
+    "rarity": "common",
+    "level": 1,
+    "stats": {
+      "strength": 1,
+      "agility": 28800,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 100
+    },
+    "marketPriceTWR": 10000,
+    "ingredients": [
+      {
+        "materialId": "mat_56",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_58",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_22",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_66",
+        "qty": 1
+      },
+      {
+        "materialId": "mat_53",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_69",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "id": "tool_132",
+    "itemId": 132,
+    "name": "Поисковая трость",
+    "toolType": "search",
+    "rarity": "common",
+    "level": 1,
+    "stats": {
+      "strength": 1,
+      "agility": 0,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 100
+    },
+    "marketPriceTWR": 2000,
+    "ingredients": [
+      {
+        "materialId": "mat_56",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_58",
+        "qty": 1
+      },
+      {
+        "materialId": "mat_53",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "id": "tool_129",
+    "itemId": 129,
+    "name": "Железная Лопата",
+    "toolType": "shovel",
+    "rarity": "common",
+    "level": 1,
+    "stats": {
+      "strength": 1,
+      "agility": 28800,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 100
+    },
+    "marketPriceTWR": 8000,
+    "ingredients": [
+      {
+        "materialId": "mat_56",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_58",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_1",
+        "qty": 10
+      },
+      {
+        "materialId": "mat_74",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_66",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_10",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "id": "tool_128",
+    "itemId": 128,
+    "name": "Сеть рыбацкая",
+    "toolType": "fishrod",
+    "rarity": "rare",
+    "level": 1,
+    "stats": {
+      "strength": 3,
+      "agility": 3600,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 250
+    },
+    "marketPriceTWR": 30000,
+    "ingredients": [
+      {
+        "materialId": "mat_53",
+        "qty": 25
+      },
+      {
+        "materialId": "mat_55",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_45",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_1131",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_230",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_10",
+        "qty": 20
+      }
+    ]
+  },
+  {
+    "id": "tool_124",
+    "itemId": 124,
+    "name": "Титановый топор",
+    "toolType": "axe",
+    "rarity": "uncommon",
+    "level": 1,
+    "stats": {
+      "strength": 2,
+      "agility": 14400,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 170
+    },
+    "marketPriceTWR": 8000,
+    "ingredients": [
+      {
+        "materialId": "mat_56",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_62",
+        "qty": 1
+      },
+      {
+        "materialId": "mat_4",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_22",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_66",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "tool_120",
+    "itemId": 120,
+    "name": "Титановая кирка",
+    "toolType": "pick",
+    "rarity": "uncommon",
+    "level": 1,
+    "stats": {
+      "strength": 2,
+      "agility": 14400,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 170
+    },
+    "marketPriceTWR": 45000,
+    "ingredients": [
+      {
+        "materialId": "mat_56",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_62",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_35",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_1131",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_53",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_71",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "id": "tool_133",
+    "itemId": 133,
+    "name": "Дихроскоп",
+    "toolType": "search",
+    "rarity": "uncommon",
+    "level": 1,
+    "stats": {
+      "strength": 2,
+      "agility": 0,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 170
+    },
+    "marketPriceTWR": 7000,
+    "ingredients": [
+      {
+        "materialId": "mat_65",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_33",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_68",
+        "qty": 1
+      },
+      {
+        "materialId": "mat_56",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "id": "tool_130",
+    "itemId": 130,
+    "name": "Титановая лопата",
+    "toolType": "shovel",
+    "rarity": "uncommon",
+    "level": 1,
+    "stats": {
+      "strength": 2,
+      "agility": 14400,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 170
+    },
+    "marketPriceTWR": 40000,
+    "ingredients": [
+      {
+        "materialId": "mat_56",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_62",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_37",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_72",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_1131",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_53",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "id": "tool_126",
+    "itemId": 126,
+    "name": "Удочка",
+    "toolType": "fishrod",
+    "rarity": "common",
+    "level": 1,
+    "stats": {
+      "strength": 1,
+      "agility": 28800,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 100
+    },
+    "marketPriceTWR": 15000,
+    "ingredients": [
+      {
+        "materialId": "mat_56",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_58",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_39",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_53",
+        "qty": 6
+      },
+      {
+        "materialId": "mat_69",
+        "qty": 6
+      },
+      {
+        "materialId": "mat_21",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "id": "tool_125",
+    "itemId": 125,
+    "name": "Алмазный топор",
+    "toolType": "axe",
+    "rarity": "rare",
+    "level": 1,
+    "stats": {
+      "strength": 3,
+      "agility": 3600,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 250
+    },
+    "marketPriceTWR": 22000,
+    "ingredients": [
+      {
+        "materialId": "mat_56",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_62",
+        "qty": 1
+      },
+      {
+        "materialId": "mat_52",
+        "qty": 1
+      },
+      {
+        "materialId": "mat_66",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "tool_121",
+    "itemId": 121,
+    "name": "Алмазная кирка",
+    "toolType": "pick",
+    "rarity": "rare",
+    "level": 1,
+    "stats": {
+      "strength": 3,
+      "agility": 3600,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 250
+    },
+    "marketPriceTWR": 90000,
+    "ingredients": [
+      {
+        "materialId": "mat_56",
+        "qty": 6
+      },
+      {
+        "materialId": "mat_59",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_52",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_67",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_69",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_53",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "id": "tool_134",
+    "itemId": 134,
+    "name": "Ресурсоискатель",
+    "toolType": "search",
+    "rarity": "rare",
+    "level": 1,
+    "stats": {
+      "strength": 3,
+      "agility": 0,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 250
+    },
+    "marketPriceTWR": 12000,
+    "ingredients": [
+      {
+        "materialId": "mat_58",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_41",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_69",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_64",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "id": "tool_131",
+    "itemId": 131,
+    "name": "Алмазная лопата",
+    "toolType": "shovel",
+    "rarity": "rare",
+    "level": 1,
+    "stats": {
+      "strength": 3,
+      "agility": 3600,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 250
+    },
+    "marketPriceTWR": 75000,
+    "ingredients": [
+      {
+        "materialId": "mat_56",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_60",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_52",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_1131",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_53",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_217",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "id": "tool_127",
+    "itemId": 127,
+    "name": "Спиннинг",
+    "toolType": "fishrod",
+    "rarity": "uncommon",
+    "level": 1,
+    "stats": {
+      "strength": 2,
+      "agility": 14400,
+      "intellect": 0,
+      "physAtk": 0,
+      "physDef": 0,
+      "magAtk": 0,
+      "magDef": 0,
+      "health": 0,
+      "mana": 0,
+      "durability": 170
+    },
+    "marketPriceTWR": 25000,
+    "ingredients": [
+      {
+        "materialId": "mat_63",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_53",
+        "qty": 8
+      },
+      {
+        "materialId": "mat_45",
+        "qty": 2
+      },
+      {
+        "materialId": "mat_71",
+        "qty": 4
+      },
+      {
+        "materialId": "mat_230",
+        "qty": 1
+      },
+      {
+        "materialId": "mat_19",
+        "qty": 2
+      }
+    ]
+  }
+]

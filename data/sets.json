@@ -1,0 +1,800 @@
+[
+  {
+    "id": "set_крестьянина",
+    "recipeKey": "крестьянина",
+    "name": "Комплект крестьянина",
+    "level": 1,
+    "studyCostTWR": 5000,
+    "classes": [
+      "warrior"
+    ],
+    "itemIds": [
+      "item_90",
+      "item_92",
+      "item_91",
+      "item_93",
+      "item_89",
+      "item_94"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_спартанца",
+    "recipeKey": "Спартанца",
+    "name": "Комплект Спартанца",
+    "level": 3,
+    "studyCostTWR": 15000,
+    "classes": [
+      "warrior"
+    ],
+    "itemIds": [
+      "item_174",
+      "item_173",
+      "item_175",
+      "item_172",
+      "item_171",
+      "item_176"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_воздушной_волны",
+    "recipeKey": "воздушной волны",
+    "name": "Комплект воздушной волны",
+    "level": 5,
+    "studyCostTWR": 25000,
+    "classes": [
+      "air_mage"
+    ],
+    "itemIds": [
+      "item_1000114",
+      "item_1000115",
+      "item_1000116",
+      "item_1000117",
+      "item_1000118",
+      "item_1000119"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_начала_гибкости",
+    "recipeKey": "начала гибкости",
+    "name": "Комплект начала гибкости",
+    "level": 1,
+    "studyCostTWR": 5000,
+    "classes": [
+      "rogue"
+    ],
+    "itemIds": [
+      "item_98",
+      "item_97",
+      "item_99",
+      "item_96",
+      "item_95",
+      "item_100"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_хищного_богомола",
+    "recipeKey": "хищного богомола",
+    "name": "Комплект хищного богомола",
+    "level": 3,
+    "studyCostTWR": 15000,
+    "classes": [
+      "rogue"
+    ],
+    "itemIds": [
+      "item_180",
+      "item_179",
+      "item_181",
+      "item_178",
+      "item_177",
+      "item_182"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_lightwindset",
+    "recipeKey": "lightwindset",
+    "name": "Комплект лёгкого ветра",
+    "level": 2,
+    "studyCostTWR": 10000,
+    "classes": [
+      "air_mage"
+    ],
+    "itemIds": [
+      "item_153",
+      "item_154",
+      "item_155",
+      "item_156",
+      "item_157",
+      "item_158"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_восточного_пассата",
+    "recipeKey": "восточного пассата",
+    "name": "Комплект восточного пассата",
+    "level": 4,
+    "studyCostTWR": 20000,
+    "classes": [
+      "air_mage"
+    ],
+    "itemIds": [
+      "item_1000096",
+      "item_1000097",
+      "item_1000098",
+      "item_1000099",
+      "item_1000100",
+      "item_1000101"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_летнего_муссона",
+    "recipeKey": "летнего муссона",
+    "name": "Комплект летнего муссона",
+    "level": 5,
+    "studyCostTWR": 25000,
+    "classes": [
+      "air_mage"
+    ],
+    "itemIds": [
+      "item_1000108",
+      "item_1000109",
+      "item_1000110",
+      "item_1000111",
+      "item_1000112",
+      "item_1000113"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_первой_искры",
+    "recipeKey": "первой искры",
+    "name": "Комплект первой искры",
+    "level": 1,
+    "studyCostTWR": 5000,
+    "classes": [
+      "fire_mage"
+    ],
+    "itemIds": [
+      "item_82",
+      "item_80",
+      "item_83",
+      "item_81",
+      "item_79",
+      "item_78"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_белой_змеи",
+    "recipeKey": "белой змеи",
+    "name": "Комплект белой змеи",
+    "level": 2,
+    "studyCostTWR": 10000,
+    "classes": [
+      "rogue"
+    ],
+    "itemIds": [
+      "item_150",
+      "item_149",
+      "item_151",
+      "item_148",
+      "item_147",
+      "item_152"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_первобытного_огня",
+    "recipeKey": "первобытного огня",
+    "name": "Комплект первобытного огня",
+    "level": 3,
+    "studyCostTWR": 15000,
+    "classes": [
+      "fire_mage"
+    ],
+    "itemIds": [
+      "item_185",
+      "item_188",
+      "item_186",
+      "item_184",
+      "item_183",
+      "item_187"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_восходящего_потока",
+    "recipeKey": "восходящего потока",
+    "name": "Комплект восходящего потока",
+    "level": 4,
+    "studyCostTWR": 20000,
+    "classes": [
+      "air_mage"
+    ],
+    "itemIds": [
+      "item_1000102",
+      "item_1000103",
+      "item_1000104",
+      "item_1000105",
+      "item_1000106",
+      "item_1000107"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_злого_капуцина",
+    "recipeKey": "злого капуцина",
+    "name": "Комплект злого капуцина",
+    "level": 5,
+    "studyCostTWR": 25000,
+    "classes": [
+      "rogue"
+    ],
+    "itemIds": [
+      "item_1000036",
+      "item_1000037",
+      "item_1000038",
+      "item_1000039",
+      "item_1000040",
+      "item_1000041"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_тихого_дуновения",
+    "recipeKey": "тихого дуновения",
+    "name": "Комплект тихого дуновения",
+    "level": 1,
+    "studyCostTWR": 5000,
+    "classes": [
+      "air_mage"
+    ],
+    "itemIds": [
+      "item_105",
+      "item_103",
+      "item_106",
+      "item_104",
+      "item_102",
+      "item_101"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_солдата",
+    "recipeKey": "солдата",
+    "name": "Комплект солдата",
+    "level": 2,
+    "studyCostTWR": 10000,
+    "classes": [
+      "warrior"
+    ],
+    "itemIds": [
+      "item_144",
+      "item_143",
+      "item_145",
+      "item_142",
+      "item_141",
+      "item_146"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_тихой_воды",
+    "recipeKey": "тихой воды",
+    "name": "Комплект тихой воды",
+    "level": 3,
+    "studyCostTWR": 15000,
+    "classes": [
+      "water_mage"
+    ],
+    "itemIds": [
+      "item_193",
+      "item_191",
+      "item_194",
+      "item_192",
+      "item_190",
+      "item_189"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_быстрого_зайца",
+    "recipeKey": "быстрого зайца",
+    "name": "Комплект быстрого зайца",
+    "level": 4,
+    "studyCostTWR": 20000,
+    "classes": [
+      "rogue"
+    ],
+    "itemIds": [
+      "item_1000030",
+      "item_1000031",
+      "item_1000032",
+      "item_1000033",
+      "item_1000034",
+      "item_1000035"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_хищного_гекона",
+    "recipeKey": "хищного гекона",
+    "name": "Комплект хищного гекона",
+    "level": 5,
+    "studyCostTWR": 25000,
+    "classes": [
+      "rogue"
+    ],
+    "itemIds": [
+      "item_1000042",
+      "item_1000043",
+      "item_1000044",
+      "item_1000045",
+      "item_1000046",
+      "item_1000047"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_первого_семени",
+    "recipeKey": "первого семени",
+    "name": "Комплект первого семени",
+    "level": 1,
+    "studyCostTWR": 5000,
+    "classes": [
+      "earth_mage"
+    ],
+    "itemIds": [
+      "item_111",
+      "item_112",
+      "item_110",
+      "item_108",
+      "item_109",
+      "item_107"
+    ],
+    "isStudied": true
+  },
+  {
+    "id": "set_белого_огня",
+    "recipeKey": "белого огня",
+    "name": "Комплект белого огня",
+    "level": 2,
+    "studyCostTWR": 10000,
+    "classes": [
+      "fire_mage"
+    ],
+    "itemIds": [
+      "item_139",
+      "item_137",
+      "item_140",
+      "item_138",
+      "item_136",
+      "item_135"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_морского_бриза",
+    "recipeKey": "морского бриза",
+    "name": "Комплект морского бриза",
+    "level": 3,
+    "studyCostTWR": 15000,
+    "classes": [
+      "air_mage"
+    ],
+    "itemIds": [
+      "item_199",
+      "item_197",
+      "item_198",
+      "item_196",
+      "item_195",
+      "item_200"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_лёгкой_белки",
+    "recipeKey": "лёгкой белки",
+    "name": "Комплект лёгкой белки",
+    "level": 4,
+    "studyCostTWR": 20000,
+    "classes": [
+      "rogue"
+    ],
+    "itemIds": [
+      "item_1000024",
+      "item_1000025",
+      "item_1000026",
+      "item_1000027",
+      "item_1000028",
+      "item_1000029"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_доброго_чернозёма",
+    "recipeKey": "доброго чернозёма",
+    "name": "Комплект доброго чернозёма",
+    "level": 5,
+    "studyCostTWR": 25000,
+    "classes": [
+      "earth_mage"
+    ],
+    "itemIds": [
+      "item_1000132",
+      "item_1000133",
+      "item_1000134",
+      "item_1000135",
+      "item_1000136",
+      "item_1000137"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_первой_капли",
+    "recipeKey": "первой капли",
+    "name": "Комплект первой капли",
+    "level": 1,
+    "studyCostTWR": 5000,
+    "classes": [
+      "water_mage"
+    ],
+    "itemIds": [
+      "item_117",
+      "item_115",
+      "item_118",
+      "item_116",
+      "item_114",
+      "item_113"
+    ],
+    "isStudied": true
+  },
+  {
+    "id": "set_лёгкого_дождя",
+    "recipeKey": "лёгкого дождя",
+    "name": "Комплект лёгкого дождя",
+    "level": 2,
+    "studyCostTWR": 10000,
+    "classes": [
+      "water_mage"
+    ],
+    "itemIds": [
+      "item_169",
+      "item_167",
+      "item_170",
+      "item_168",
+      "item_166",
+      "item_165"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_глинистых_почв",
+    "recipeKey": "глинистых почв",
+    "name": "Комплект глинистых почв",
+    "level": 3,
+    "studyCostTWR": 15000,
+    "classes": [
+      "earth_mage"
+    ],
+    "itemIds": [
+      "item_1129",
+      "item_1127",
+      "item_1130",
+      "item_1128",
+      "item_1126",
+      "item_1125"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_болотных_ям",
+    "recipeKey": "болотных ям",
+    "name": "Комплект болотных ям",
+    "level": 4,
+    "studyCostTWR": 20000,
+    "classes": [
+      "earth_mage"
+    ],
+    "itemIds": [
+      "item_1000126",
+      "item_1000127",
+      "item_1000128",
+      "item_1000129",
+      "item_1000130",
+      "item_1000131"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_сухой_пустыни",
+    "recipeKey": "сухой пустыни",
+    "name": "Комплект сухой пустыни",
+    "level": 5,
+    "studyCostTWR": 25000,
+    "classes": [
+      "earth_mage"
+    ],
+    "itemIds": [
+      "item_1000138",
+      "item_1000139",
+      "item_1000140",
+      "item_1000141",
+      "item_1000142",
+      "item_1000143"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_весенней_земли",
+    "recipeKey": "весенней земли",
+    "name": "Комплект весенней земли",
+    "level": 2,
+    "studyCostTWR": 10000,
+    "classes": [
+      "earth_mage"
+    ],
+    "itemIds": [
+      "item_1119",
+      "item_1120",
+      "item_1121",
+      "item_1122",
+      "item_1123",
+      "item_1124"
+    ],
+    "isStudied": true
+  },
+  {
+    "id": "set_песчаных_дюн",
+    "recipeKey": "песчаных дюн",
+    "name": "Комплект песчаных дюн",
+    "level": 4,
+    "studyCostTWR": 20000,
+    "classes": [
+      "earth_mage"
+    ],
+    "itemIds": [
+      "item_1000120",
+      "item_1000121",
+      "item_1000122",
+      "item_1000123",
+      "item_1000124",
+      "item_1000125"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_гунсо",
+    "recipeKey": "гунсо",
+    "name": "Комплект гунсо",
+    "level": 5,
+    "studyCostTWR": 25000,
+    "classes": [
+      "warrior"
+    ],
+    "itemIds": [
+      "item_1000012",
+      "item_1000013",
+      "item_1000014",
+      "item_1000015",
+      "item_1000016",
+      "item_1000017"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_гладиатора",
+    "recipeKey": "гладиатора",
+    "name": "Комплект гладиатора",
+    "level": 4,
+    "studyCostTWR": 20000,
+    "classes": [
+      "warrior"
+    ],
+    "itemIds": [
+      "item_1000006",
+      "item_1000007",
+      "item_1000008",
+      "item_1000009",
+      "item_1000010",
+      "item_1000011"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_сержанта",
+    "recipeKey": "сержанта",
+    "name": "Комплект сержанта",
+    "level": 5,
+    "studyCostTWR": 25000,
+    "classes": [
+      "warrior"
+    ],
+    "itemIds": [
+      "item_1000018",
+      "item_1000019",
+      "item_1000020",
+      "item_1000021",
+      "item_1000022",
+      "item_1000023"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_легионера",
+    "recipeKey": "легионера",
+    "name": "Комплект легионера",
+    "level": 4,
+    "studyCostTWR": 20000,
+    "classes": [
+      "warrior"
+    ],
+    "itemIds": [
+      "item_1000000",
+      "item_1000001",
+      "item_1000002",
+      "item_1000003",
+      "item_1000004",
+      "item_1000005"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_огня_доблести",
+    "recipeKey": "огня доблести",
+    "name": "Комплект огня доблести",
+    "level": 5,
+    "studyCostTWR": 25000,
+    "classes": [
+      "fire_mage"
+    ],
+    "itemIds": [
+      "item_1000060",
+      "item_1000061",
+      "item_1000062",
+      "item_1000063",
+      "item_1000064",
+      "item_1000065"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_огня_славы",
+    "recipeKey": "огня славы",
+    "name": "Комплект огня славы",
+    "level": 4,
+    "studyCostTWR": 20000,
+    "classes": [
+      "fire_mage"
+    ],
+    "itemIds": [
+      "item_1000054",
+      "item_1000055",
+      "item_1000056",
+      "item_1000057",
+      "item_1000058",
+      "item_1000059"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_огня_справедливости",
+    "recipeKey": "огня справедливости",
+    "name": "Комплект огня справедливости",
+    "level": 5,
+    "studyCostTWR": 25000,
+    "classes": [
+      "fire_mage"
+    ],
+    "itemIds": [
+      "item_1000066",
+      "item_1000067",
+      "item_1000068",
+      "item_1000069",
+      "item_1000070",
+      "item_1000071"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_огня_чести",
+    "recipeKey": "огня чести",
+    "name": "Комплект огня чести",
+    "level": 4,
+    "studyCostTWR": 20000,
+    "classes": [
+      "fire_mage"
+    ],
+    "itemIds": [
+      "item_1000048",
+      "item_1000049",
+      "item_1000050",
+      "item_1000051",
+      "item_1000052",
+      "item_1000053"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_весеннего_дождя",
+    "recipeKey": "весеннего дождя",
+    "name": "Комплект весеннего дождя",
+    "level": 5,
+    "studyCostTWR": 25000,
+    "classes": [
+      "water_mage"
+    ],
+    "itemIds": [
+      "item_1000090",
+      "item_1000091",
+      "item_1000092",
+      "item_1000093",
+      "item_1000094",
+      "item_1000095"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_водного_прибоя",
+    "recipeKey": "водного прибоя",
+    "name": "Комплект водного прибоя",
+    "level": 4,
+    "studyCostTWR": 20000,
+    "classes": [
+      "water_mage"
+    ],
+    "itemIds": [
+      "item_1000078",
+      "item_1000079",
+      "item_1000080",
+      "item_1000081",
+      "item_1000082",
+      "item_1000083"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_осеннего_дождя",
+    "recipeKey": "осеннего дождя",
+    "name": "Комплект осеннего дождя",
+    "level": 5,
+    "studyCostTWR": 25000,
+    "classes": [
+      "water_mage"
+    ],
+    "itemIds": [
+      "item_1000084",
+      "item_1000085",
+      "item_1000086",
+      "item_1000087",
+      "item_1000088",
+      "item_1000089"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "set_морской_волны",
+    "recipeKey": "морской волны",
+    "name": "Комплект морской волны",
+    "level": 4,
+    "studyCostTWR": 20000,
+    "classes": [
+      "water_mage"
+    ],
+    "itemIds": [
+      "item_1000072",
+      "item_1000073",
+      "item_1000074",
+      "item_1000075",
+      "item_1000076",
+      "item_1000077"
+    ],
+    "isStudied": false
+  }
+]

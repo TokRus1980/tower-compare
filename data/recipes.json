@@ -1,0 +1,418 @@
+[
+  {
+    "id": "recipe_202",
+    "recipeKey": "Железный топор",
+    "name": "Железный топор",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 2000,
+    "blacksmithXP": 50,
+    "outputItemIds": [
+      "tool_123"
+    ],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_205",
+    "recipeKey": "Железная кирка",
+    "name": "Железная кирка",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 2000,
+    "blacksmithXP": 50,
+    "outputItemIds": [
+      "tool_119"
+    ],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_208",
+    "recipeKey": "Поисковая трость",
+    "name": "Поисковая трость",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 2000,
+    "blacksmithXP": 30,
+    "outputItemIds": [
+      "tool_132"
+    ],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_211",
+    "recipeKey": "Железная Лопата",
+    "name": "Железная Лопата",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 2000,
+    "blacksmithXP": 50,
+    "outputItemIds": [
+      "tool_129"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_219",
+    "recipeKey": "Слиток железа",
+    "name": "Слиток железа",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 1600,
+    "blacksmithXP": 5,
+    "outputItemIds": [],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_234",
+    "recipeKey": "powder",
+    "name": "Порох",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 5000,
+    "blacksmithXP": 3,
+    "outputItemIds": [],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_237",
+    "recipeKey": "4PowersHat",
+    "name": "Шляпа 4 стихий",
+    "recipeType": "Single",
+    "category": "set",
+    "level": 2,
+    "studyCostTWR": 0,
+    "blacksmithXP": 60,
+    "outputItemIds": [
+      "item_1136"
+    ],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_272",
+    "recipeKey": "fishsetka",
+    "name": "Рыбацкая Сеть",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 30000,
+    "blacksmithXP": 90,
+    "outputItemIds": [
+      "tool_128"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_203",
+    "recipeKey": "Титановый топор",
+    "name": "Титановый топор",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 5000,
+    "blacksmithXP": 75,
+    "outputItemIds": [
+      "tool_124"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_206",
+    "recipeKey": "Титановая кирка",
+    "name": "Титановая кирка",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 5000,
+    "blacksmithXP": 75,
+    "outputItemIds": [
+      "tool_120"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_209",
+    "recipeKey": "Дихроскоп",
+    "name": "Дихроскоп",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 5000,
+    "blacksmithXP": 75,
+    "outputItemIds": [
+      "tool_133"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_212",
+    "recipeKey": "Титановая лопата",
+    "name": "Титановая лопата",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 5000,
+    "blacksmithXP": 75,
+    "outputItemIds": [
+      "tool_130"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_220",
+    "recipeKey": "Слиток золота",
+    "name": "Слиток золота",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 5500,
+    "blacksmithXP": 5,
+    "outputItemIds": [],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_227",
+    "recipeKey": "Удочка",
+    "name": "Удочка",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 2000,
+    "blacksmithXP": 35,
+    "outputItemIds": [
+      "tool_126"
+    ],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_204",
+    "recipeKey": "Алмазный топор",
+    "name": "Алмазный топор",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 12000,
+    "blacksmithXP": 115,
+    "outputItemIds": [
+      "tool_125"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_207",
+    "recipeKey": "Алмазная кирка",
+    "name": "Алмазная кирка",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 12000,
+    "blacksmithXP": 115,
+    "outputItemIds": [
+      "tool_121"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_210",
+    "recipeKey": "Ресурсоискатель",
+    "name": "Ресурсоискатель",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 12000,
+    "blacksmithXP": 75,
+    "outputItemIds": [
+      "tool_134"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_213",
+    "recipeKey": "Алмазная лопата",
+    "name": "Алмазная лопата",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 12000,
+    "blacksmithXP": 115,
+    "outputItemIds": [
+      "tool_131"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_221",
+    "recipeKey": "Слиток серебра",
+    "name": "Слиток серебра",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 4200,
+    "blacksmithXP": 5,
+    "outputItemIds": [],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_228",
+    "recipeKey": "Спиннинг",
+    "name": "Спиннинг",
+    "recipeType": "Single",
+    "category": "tool",
+    "level": 1,
+    "studyCostTWR": 5000,
+    "blacksmithXP": 75,
+    "outputItemIds": [
+      "tool_127"
+    ],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_222",
+    "recipeKey": "Слиток меди",
+    "name": "Слиток меди",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 1900,
+    "blacksmithXP": 6,
+    "outputItemIds": [],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_214",
+    "recipeKey": "Нить",
+    "name": "Нить",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 950,
+    "blacksmithXP": 1,
+    "outputItemIds": [],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_223",
+    "recipeKey": "Слиток титана",
+    "name": "Слиток титана",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 3500,
+    "blacksmithXP": 5,
+    "outputItemIds": [],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_273",
+    "recipeKey": "Koza",
+    "name": "Кожа кабана",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 7500,
+    "blacksmithXP": 2,
+    "outputItemIds": [],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_215",
+    "recipeKey": "Льняная ткань",
+    "name": "Льняная ткань",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 1100,
+    "blacksmithXP": 1,
+    "outputItemIds": [],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_224",
+    "recipeKey": "Слиток алюминия",
+    "name": "Слиток алюминия",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 1800,
+    "blacksmithXP": 5,
+    "outputItemIds": [],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_216",
+    "recipeKey": "Хлопчатая ткань",
+    "name": "Хлопчатая ткань",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 1100,
+    "blacksmithXP": 1,
+    "outputItemIds": [],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_225",
+    "recipeKey": "Слиток олова",
+    "name": "Слиток олова",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 2200,
+    "blacksmithXP": 5,
+    "outputItemIds": [],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_217",
+    "recipeKey": "Деревянный брусок",
+    "name": "Деревянный брусок",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 1550,
+    "blacksmithXP": 1,
+    "outputItemIds": [],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_226",
+    "recipeKey": "Стекло",
+    "name": "Стекло",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 2750,
+    "blacksmithXP": 1,
+    "outputItemIds": [],
+    "isStudied": false
+  },
+  {
+    "id": "recipe_218",
+    "recipeKey": "Вода",
+    "name": "Вода",
+    "recipeType": "Single",
+    "category": "material",
+    "level": 1,
+    "studyCostTWR": 300,
+    "blacksmithXP": 1,
+    "outputItemIds": [],
+    "isStudied": true
+  },
+  {
+    "id": "recipe_235",
+    "recipeKey": "Bread",
+    "name": "Хлеб",
+    "recipeType": "Single",
+    "category": "food",
+    "level": 1,
+    "studyCostTWR": 8000,
+    "blacksmithXP": 2,
+    "outputItemIds": [],
+    "isStudied": false
+  }
+]
